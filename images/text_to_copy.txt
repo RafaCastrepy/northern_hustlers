@@ -1,0 +1,24 @@
+<div class="topnav" style="background-color: #333; overflow: hidden; position: fixed; top: 0; left: 0; height: 100%; width: 120px; z-index: 1000; box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);">
+    <a href="../northern.html" style="color: #f2f2f2; text-align: center; padding: 5px 0; text-decoration: none; font-size: 17px; display: block; background-color: #333;">Home</a>
+    <a href="#game" style="color: #f2f2f2; text-align: center; padding: 5px 0; text-decoration: none; font-size: 17px; display: block; background-color: #eabf1f; color: white;">Game</a>
+    <a href="../contact.html" style="color: #f2f2f2; text-align: center; padding: 5px 0; text-decoration: none; font-size: 17px; display: block;">Contact Us</a>
+    <a href="../rules.html" style="color: #f2f2f2; text-align: center; padding: 5px 0; text-decoration: none; font-size: 17px; display: block;">Rules</a>
+</div>
+
+<div class="rightnav" style="background-color: #333; position: fixed; top: 0; right: 0; height: 100%; width: 240px; z-index: 1000; box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);">
+    <div style="color: #f2f2f2; padding: 10px 5px; text-align: center; font-size: 18px; font-weight: bold; background-color: #444;">Welcome to the Game!</div>
+    <div style="color: #f2f2f2; padding: 10px 5px; font-size: 14px; text-align: center; background-color: #333;">Explore the features, learn the rules, and enjoy playing!</div>
+    <div style="color: #f2f2f2; padding: 10px 5px; font-size: 14px; text-align: center; background-color: #333;">Please play in full screen for the best experience</div>
+    
+    <!-- Game Rules List -->
+    <div style="padding: 10px 5px; background-color: #444; font-weight: bold; color: #f2f2f2; text-align: center; font-size: 18px;">Game Rules</div>
+    <ul style="color: #f2f2f2; padding: 10px 20px; list-style-type: none; margin: 0; font-size: 15px;">
+        <li style="margin-bottom: 5px;">Each player starts with an equal amount of in-game currency.</li>
+        <li style="margin-bottom: 5px;">Players take turns rolling the dice and moving around the board.</li>
+        <li style="margin-bottom: 5px;">Properties can be bought, traded, or auctioned.</li>
+        <li style="margin-bottom: 5px;">Pay rent when landing on owned properties.</li>
+        <li style="margin-bottom: 5px;">Special cards (Chance, Community Chest) affect the game.</li>
+        <li style="margin-bottom: 5px;">Bankruptcy occurs when a player can no longer pay debts.</li>
+        <li style="margin-bottom: 5px;">The last player remaining with money wins.</li>
+    </ul>
+</div>

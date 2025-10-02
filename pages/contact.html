@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="../styles/styles.css">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northern Hustle - Contact Us</title> 
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="northern.html">Home</a>
+        <a href="../web/index.html">Game</a> 
+        <a class="active" href="contact.html">Contact Us</a>          
+        <a href="rules.html">Rules</a>
+    </div>
+
+
+    <header>
+        <img src = "../images/bee_image.gif" id = bee>
+        <h1>The Northern Hustle</h1>
+        <p>Manchester’s Ultimate Property Rush!</p>
+    </header>
+        
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+            <form id="contactForm" action="javascript:void(0);" method="post"> <!-- Change action here -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("#contactForm");
+    
+            // Ensure the event listener is only added once each time the page loads
+            if (form) {
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault();  // Prevent the default form submission
+    
+                    const formData = {
+                        name: document.getElementById("name").value,
+                        email: document.getElementById("email").value,
+                        message: document.getElementById("message").value
+                    };
+    
+                    // Send the form data to the Flask server
+                    fetch("http://localhost:5000/save", {  // Correct port here (5000)
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(formData)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        form.reset();  // Clears the form after submission
+
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);  // Handle any errors
+                    });
+                });
+            }
+        });
+    </script>
+    
+    
+    
+</body>
+<footer>
+    <p>&copy; 2025 The Northern Hustle Ltd. All rights reserved.</p>
+</footer>
+
+
+</html>

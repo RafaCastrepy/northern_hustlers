@@ -1,0 +1,180 @@
+/* ----- General Styles ------  */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ----- Top Navigation ----- */
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #6c2b91;
+  }
+  
+  .topnav a.active {
+    background-color: #eabf1f;
+    color: white;
+  }
+  
+  /* ----- Header ----- */
+  header {
+    background-color: #25281d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  header p {
+    color: #eabf1f;
+  }
+  
+  /* ----- Logo & Bee Image -----  */
+  #logo, #bee {
+    text-align: left;
+    width: 100px;
+    border-radius: 10px;
+  }
+  
+  #bee {
+    width: 80px;
+    margin-right: 15px;
+  }
+  
+  /* ----- Title Text ----- */
+  .title-text h1 {
+    font-size: 24px;
+    margin: 0;
+
+  }
+  
+  .title-text p {
+    font-size: 16px;
+    color: #eabf1f;
+  }
+  
+  /* ----- Rules Page Container -----  */
+  .container {
+    background: white;
+    width: 65%;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* -----  Headings ----- */
+  h1 {
+    text-align: center;
+    background: #25281d;
+    color: white;
+    border-radius: 8px;
+    font-size: 24px;
+  }
+  
+  h2 {
+    background: #25281d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  /* ----- Lists ----- */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
+  }
+  
+  /* ----- Contact Form-----  */
+  .contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .form-group button {
+    background-color: #25281d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #1e2117;
+  }
+
+    /* ----- Footer ----- */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
